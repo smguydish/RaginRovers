@@ -14,3 +14,19 @@ C:\Documents and Settings\tanczosm.EASD\Desktop\RaginRovers\Project\RaginRovers\
 C:\Documents and Settings\tanczosm.EASD\Desktop\RaginRovers\Project\RaginRovers\RaginRovers\RaginRovers\bin\x86\Debug\Content\background.xnb
 C:\Documents and Settings\tanczosm.EASD\Desktop\RaginRovers\Project\RaginRovers\RaginRovers\RaginRovers\bin\x86\Debug\Content\boom.xnb
 C:\Documents and Settings\tanczosm.EASD\Desktop\RaginRovers\Project\RaginRovers\RaginRovers\RaginRovers\bin\x86\Debug\Content\cursor.xnb
+C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRovers\RaginRovers\bin\x86\Debug\Content\spritesheet.xnb
+C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRovers\RaginRovers\bin\x86\Debug\Content\background.xnb
+C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRovers\RaginRovers\bin\x86\Debug\Content\boom.xnb
+C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRovers\RaginRovers\bin\x86\Debug\Content\cursor.xnb
+C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRovers\RaginRovers\bin\x86\Debug\Content\spritesheet.txt
+C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRovers\RaginRovers\bin\x86\Debug\RaginRovers.exe
+C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRovers\RaginRovers\bin\x86\Debug\RaginRovers.pdb
+C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRovers\RaginRovers\bin\x86\Debug\FarseerPhysicsXNA.dll
+C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRovers\RaginRovers\bin\x86\Debug\RaginRoversLibrary.dll
+C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRovers\RaginRovers\bin\x86\Debug\FarseerPhysicsXNA.pdb
+C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRovers\RaginRovers\bin\x86\Debug\FarseerPhysicsXNA.xml
+C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRovers\RaginRovers\bin\x86\Debug\RaginRoversLibrary.pdb
+C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRovers\RaginRovers\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRovers\RaginRovers\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRovers\RaginRovers\obj\x86\Debug\RaginRovers.exe
+C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRovers\RaginRovers\obj\x86\Debug\RaginRovers.pdb

@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Documents and Settings\tanczosm.EASD\Desktop\RaginRovers\Project\RaginRovers\RaginRovers\RaginRovers\bin\x86\Debug\Content\spritesheet.xnb</Output>
-      <Time>2013-09-17T08:14:42.8567226-04:00</Time>
+      <Output>C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRovers\RaginRovers\bin\x86\Debug\Content\spritesheet.xnb</Output>
+      <Time>2013-09-17T14:42:35.1152-04:00</Time>
     </Item>
     <Item>
       <Source>background.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Documents and Settings\tanczosm.EASD\Desktop\RaginRovers\Project\RaginRovers\RaginRovers\RaginRovers\bin\x86\Debug\Content\background.xnb</Output>
-      <Time>2013-09-11T13:55:02.796875-04:00</Time>
+      <Output>C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRovers\RaginRovers\bin\x86\Debug\Content\background.xnb</Output>
+      <Time>2013-09-17T14:42:35.0852-04:00</Time>
     </Item>
     <Item>
       <Source>boom.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Documents and Settings\tanczosm.EASD\Desktop\RaginRovers\Project\RaginRovers\RaginRovers\RaginRovers\bin\x86\Debug\Content\boom.xnb</Output>
-      <Time>2013-09-12T12:54:05.9584226-04:00</Time>
+      <Output>C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRovers\RaginRovers\bin\x86\Debug\Content\boom.xnb</Output>
+      <Time>2013-09-17T14:42:35.0952-04:00</Time>
     </Item>
     <Item>
       <Source>cursor.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Documents and Settings\tanczosm.EASD\Desktop\RaginRovers\Project\RaginRovers\RaginRovers\RaginRovers\bin\x86\Debug\Content\cursor.xnb</Output>
-      <Time>2013-09-12T13:44:48.4502258-04:00</Time>
+      <Output>C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRovers\RaginRovers\bin\x86\Debug\Content\cursor.xnb</Output>
+      <Time>2013-09-17T14:42:35.0952-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -43,39 +43,39 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Documents and Settings\tanczosm.EASD\Desktop\RaginRovers\Project\RaginRovers\RaginRovers\RaginRoversContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Documents and Settings\tanczosm.EASD\Desktop\RaginRovers\Project\RaginRovers\RaginRovers\RaginRovers\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Documents and Settings\tanczosm.EASD\Desktop\RaginRovers\Project\RaginRovers\RaginRovers\RaginRoversContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Documents and Settings\tanczosm.EASD\Desktop\RaginRovers\Project\RaginRovers\RaginRovers\RaginRovers\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRovers\RaginRoversContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRovers\RaginRovers\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRovers\RaginRoversContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRovers\RaginRovers\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
-        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
         <Value>2010-08-23T12:41:18-04:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
         <Value>2010-08-23T12:41:18-04:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
         <Value>2010-08-23T12:41:18-04:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
         <Value>2010-08-23T12:41:18-04:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
         <Value>2010-08-23T12:41:18-04:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
         <Value>2010-08-23T12:41:18-04:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2011-04-07T08:07:55.6528615-04:00</Value>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2012-04-18T11:24:14.1308-04:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

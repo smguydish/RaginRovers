@@ -8,3 +8,9 @@ C:\Documents and Settings\tanczosm.EASD\Desktop\RaginRovers\Project\RaginRovers\
 C:\Documents and Settings\tanczosm.EASD\Desktop\RaginRovers\Project\RaginRovers\Lidgren.Network\obj\Debug\ResolveAssemblyReference.cache
 C:\Documents and Settings\tanczosm.EASD\Desktop\RaginRovers\Project\RaginRovers\Lidgren.Network\obj\Debug\Lidgren.Network.dll
 C:\Documents and Settings\tanczosm.EASD\Desktop\RaginRovers\Project\RaginRovers\Lidgren.Network\obj\Debug\Lidgren.Network.pdb
+C:\Users\eahscs\Documents\GitHub\RaginRovers\Lidgren.Network\bin\Debug\Lidgren.Network.XML
+C:\Users\eahscs\Documents\GitHub\RaginRovers\Lidgren.Network\bin\Debug\Lidgren.Network.dll
+C:\Users\eahscs\Documents\GitHub\RaginRovers\Lidgren.Network\bin\Debug\Lidgren.Network.pdb
+C:\Users\eahscs\Documents\GitHub\RaginRovers\Lidgren.Network\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\eahscs\Documents\GitHub\RaginRovers\Lidgren.Network\obj\Debug\Lidgren.Network.dll
+C:\Users\eahscs\Documents\GitHub\RaginRovers\Lidgren.Network\obj\Debug\Lidgren.Network.pdb

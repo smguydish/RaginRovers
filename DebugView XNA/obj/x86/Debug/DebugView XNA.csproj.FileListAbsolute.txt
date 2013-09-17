@@ -36,3 +36,13 @@ C:\Documents and Settings\tanczosm.EASD\Desktop\RaginRovers\Project\RaginRovers\
 C:\Documents and Settings\tanczosm.EASD\Desktop\RaginRovers\Project\RaginRovers\DebugView XNA\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Documents and Settings\tanczosm.EASD\Desktop\RaginRovers\Project\RaginRovers\DebugView XNA\obj\x86\Debug\DebugViewXNA.dll
 C:\Documents and Settings\tanczosm.EASD\Desktop\RaginRovers\Project\RaginRovers\DebugView XNA\obj\x86\Debug\DebugViewXNA.pdb
+C:\Users\eahscs\Documents\GitHub\RaginRovers\DebugView XNA\bin\x86\Debug\DebugViewXNA.XML
+C:\Users\eahscs\Documents\GitHub\RaginRovers\DebugView XNA\bin\x86\Debug\DebugViewXNA.dll
+C:\Users\eahscs\Documents\GitHub\RaginRovers\DebugView XNA\bin\x86\Debug\DebugViewXNA.pdb
+C:\Users\eahscs\Documents\GitHub\RaginRovers\DebugView XNA\bin\x86\Debug\FarseerPhysicsXNA.dll
+C:\Users\eahscs\Documents\GitHub\RaginRovers\DebugView XNA\bin\x86\Debug\FarseerPhysicsXNA.pdb
+C:\Users\eahscs\Documents\GitHub\RaginRovers\DebugView XNA\bin\x86\Debug\FarseerPhysicsXNA.xml
+C:\Users\eahscs\Documents\GitHub\RaginRovers\DebugView XNA\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\eahscs\Documents\GitHub\RaginRovers\DebugView XNA\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\eahscs\Documents\GitHub\RaginRovers\DebugView XNA\obj\x86\Debug\DebugViewXNA.dll
+C:\Users\eahscs\Documents\GitHub\RaginRovers\DebugView XNA\obj\x86\Debug\DebugViewXNA.pdb

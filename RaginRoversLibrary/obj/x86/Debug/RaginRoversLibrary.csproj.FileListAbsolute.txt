@@ -7,3 +7,12 @@ C:\Documents and Settings\tanczosm.EASD\Desktop\RaginRovers\Project\RaginRovers\
 C:\Documents and Settings\tanczosm.EASD\Desktop\RaginRovers\Project\RaginRovers\RaginRoversLibrary\bin\x86\Debug\FarseerPhysicsXNA.xml
 C:\Documents and Settings\tanczosm.EASD\Desktop\RaginRovers\Project\RaginRovers\RaginRoversLibrary\obj\x86\Debug\RaginRoversLibrary.dll
 C:\Documents and Settings\tanczosm.EASD\Desktop\RaginRovers\Project\RaginRovers\RaginRoversLibrary\obj\x86\Debug\RaginRoversLibrary.pdb
+C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRoversLibrary\bin\x86\Debug\RaginRoversLibrary.dll
+C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRoversLibrary\bin\x86\Debug\RaginRoversLibrary.pdb
+C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRoversLibrary\bin\x86\Debug\FarseerPhysicsXNA.dll
+C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRoversLibrary\bin\x86\Debug\FarseerPhysicsXNA.pdb
+C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRoversLibrary\bin\x86\Debug\FarseerPhysicsXNA.xml
+C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRoversLibrary\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRoversLibrary\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRoversLibrary\obj\x86\Debug\RaginRoversLibrary.dll
+C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRoversLibrary\obj\x86\Debug\RaginRoversLibrary.pdb

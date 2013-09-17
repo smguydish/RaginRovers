@@ -30,6 +30,7 @@ namespace RaginRovers
         BOOM = 300
     }
 
+    // Helper class to create sprites
     public static class SpriteCreators
     {
         public static Dictionary<string, Rectangle> spriteSourceRectangles;
@@ -92,6 +93,7 @@ namespace RaginRovers
                                                BodyType.Dynamic,
                                                true);
 
+            
             sprite.PhysicsBody.AngularDamping = 0.9f;
             sprite.PhysicsBody.Restitution = 0.2f;
             sprite.PhysicsBody.Mass = 40;

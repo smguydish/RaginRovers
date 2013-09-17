@@ -1,0 +1,9 @@
+C:\Documents and Settings\tanczosm.EASD\Desktop\RaginRovers\Project\RaginRovers\RaginRoversLibrary\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\tanczosm.EASD\Desktop\RaginRovers\Project\RaginRovers\RaginRoversLibrary\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Documents and Settings\tanczosm.EASD\Desktop\RaginRovers\Project\RaginRovers\RaginRoversLibrary\bin\x86\Debug\RaginRoversLibrary.dll
+C:\Documents and Settings\tanczosm.EASD\Desktop\RaginRovers\Project\RaginRovers\RaginRoversLibrary\bin\x86\Debug\RaginRoversLibrary.pdb
+C:\Documents and Settings\tanczosm.EASD\Desktop\RaginRovers\Project\RaginRovers\RaginRoversLibrary\bin\x86\Debug\FarseerPhysicsXNA.dll
+C:\Documents and Settings\tanczosm.EASD\Desktop\RaginRovers\Project\RaginRovers\RaginRoversLibrary\bin\x86\Debug\FarseerPhysicsXNA.pdb
+C:\Documents and Settings\tanczosm.EASD\Desktop\RaginRovers\Project\RaginRovers\RaginRoversLibrary\bin\x86\Debug\FarseerPhysicsXNA.xml
+C:\Documents and Settings\tanczosm.EASD\Desktop\RaginRovers\Project\RaginRovers\RaginRoversLibrary\obj\x86\Debug\RaginRoversLibrary.dll
+C:\Documents and Settings\tanczosm.EASD\Desktop\RaginRovers\Project\RaginRovers\RaginRoversLibrary\obj\x86\Debug\RaginRoversLibrary.pdb

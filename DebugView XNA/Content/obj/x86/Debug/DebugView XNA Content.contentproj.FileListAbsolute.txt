@@ -1,0 +1,2 @@
+H:\Honors CSharp\ParallaxScrolling\DebugView XNA\Content\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\student\Desktop\ParallaxScrolling\ParallaxScrolling\DebugView XNA\Content\obj\x86\Debug\ResolveAssemblyReference.cache

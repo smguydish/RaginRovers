@@ -30,7 +30,7 @@ namespace RaginRovers
         BOOM = 300
     }
 
-    // Helper class to create sprites
+    // Whoa dude.. Helper class to create sprites
     public static class SpriteCreators
     {
         public static Dictionary<string, Rectangle> spriteSourceRectangles;

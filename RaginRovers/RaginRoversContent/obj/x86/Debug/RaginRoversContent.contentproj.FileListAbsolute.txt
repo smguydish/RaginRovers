@@ -1,2 +1,3 @@
 C:\Documents and Settings\tanczosm.EASD\Desktop\RaginRovers\Project\RaginRovers\RaginRovers\RaginRoversContent\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRovers\RaginRoversContent\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\SlowBen\Documents\GitHub\RaginRovers\RaginRovers\RaginRoversContent\obj\x86\Debug\RaginRoversContent.contentprojResolveAssemblyReference.cache

@@ -31,6 +31,9 @@ namespace RaginRovers
 
         GameObjectFactory factory;
         TextureManager textureManager;
+
+        bool stopMovement = false;
+        bool stopPower = false;
         
         bool EditMode = false;
         bool KeyDown = false, MouseDown = false;
@@ -81,6 +84,9 @@ namespace RaginRovers
             factory.AddCreator((int)GameObjectTypes.PLATFORM_LEFT, SpriteCreators.CreatePlatformLeft);
             factory.AddCreator((int)GameObjectTypes.PLATFORM_MIDDLE, SpriteCreators.CreatePlatformMiddle);
             factory.AddCreator((int)GameObjectTypes.PLATFORM_RIGHT, SpriteCreators.CreatePlatformRight);
+            factory.AddCreator((int)GameObjectTypes.CANNON, SpriteCreators.CreateCannon);
+            factory.AddCreator((int)GameObjectTypes.CANNONWHEEL, SpriteCreators.CreateCannonWheel);
+
 
             //factory.Objects[cat].sprite.Rotation = 3;
 
@@ -194,6 +200,7 @@ namespace RaginRovers
             if (kb.IsKeyDown(Keys.P))
                 camera.Zoom = 1;
 
+
             MouseState ms = Mouse.GetState();
             DetectKeyPress(kb, Keys.OemTilde);
             DetectKeyPress(kb, Keys.D1);  // Record if this key is pressed
@@ -205,11 +212,13 @@ namespace RaginRovers
             DetectKeyPress(kb, Keys.D7);
             DetectKeyPress(kb, Keys.D8);
             DetectKeyPress(kb, Keys.D9);
+            DetectKeyPress(kb, Keys.D0);
             DetectKeyPress(kb, Keys.R);
             DetectKeyPress(kb, Keys.Delete);
             DetectKeyPress(kb, Keys.M);
             DetectKeyPress(kb, Keys.L);
             DetectKeyPress(kb, Keys.Enter);
+            DetectKeyPress(kb, Keys.Space);
 
             if (KeyDown)
             {
@@ -225,6 +234,20 @@ namespace RaginRovers
                                     factory.Objects[i].sprite.PhysicsBody.ApplyLinearImpulse(new Vector2(60, 40));
                             }
 
+                            break;
+////////////////////////////////////////////////////
+                        case Keys.Space:
+                            if (!stopMovement)
+                            {
+                                stopMovement = true;
+                                stopPower = false;
+                            }
+                            if (!stopPower)
+                            {
+                                //send power and rotation of cannon and shoot bulldog
+                                stopMovement = false;
+                                stopPower = true;
+                            }
                             break;
 
                         case Keys.OemTilde:
@@ -317,6 +340,15 @@ namespace RaginRovers
                             }
 
                             break;
+                        case Keys.D0:
+
+                            if (EditMode)
+                            {
+                                factory.Create((int)GameObjectTypes.CANNON, new Vector2((int)ms.X + camera.Position.X - 95, (int)ms.Y - 80), "spritesheet", new Vector2(0, 0), 0);
+                                factory.Create((int)GameObjectTypes.CANNONWHEEL, new Vector2((int)ms.X + camera.Position.X - 95, (int)ms.Y - 80), "spritesheet", new Vector2(0, 0), 0);
+                            }
+
+                            break;
 
                         case Keys.R:
                             
@@ -380,6 +412,16 @@ namespace RaginRovers
                     KeyDown = false;
                     Key = Keys.None;
                 }
+            }
+
+            if (!stopMovement)
+            {
+                //tell cannon to incrementally increase rotation
+            }
+            if (!stopPower)
+            {
+                //power go between two values incrementally
+                //visually show somehow
             }
 
             if (EditMode)

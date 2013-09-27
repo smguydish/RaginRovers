@@ -46,11 +46,11 @@ namespace RaginRovers
                 server.Recycle(msg); //what this do
             }
         }
-        public void Send()
+        public void Send(string serializedData)
         {
             NetOutgoingMessage sendMsg = server.CreateMessage();
-            //put what you want in the message
-            sendMsg.Write("Hello");
+
+            sendMsg.Write(serializedData);
 
             server.SendMessage(sendMsg, recipient, NetDeliveryMethod.ReliableUnordered);
         }

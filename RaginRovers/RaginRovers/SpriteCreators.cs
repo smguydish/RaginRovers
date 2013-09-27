@@ -12,6 +12,7 @@ using FarseerPhysics.Dynamics;
 using System.IO;
 using Microsoft.Xna.Framework.Storage;
 using RaginRoversLibrary;
+using FarseerPhysics.Collision.Shapes;
 
 namespace RaginRovers
 {
@@ -27,6 +28,8 @@ namespace RaginRovers
         PLATFORM_LEFT,
         PLATFORM_MIDDLE,
         PLATFORM_RIGHT,
+        CANNON,
+        CANNONWHEEL,
         BOOM = 300
     }
 
@@ -244,6 +247,45 @@ namespace RaginRovers
                                    velocity,
                                    BodyType.Static,
                                    true);
+
+            sprite.Rotation = rotation;
+
+            return sprite;
+        }
+
+        public static Sprite CreateCannon(Vector2 location,
+                                                    Texture2D texture,
+                                                    Vector2 velocity,
+                                                    float rotation)
+        {
+            Sprite sprite = new Sprite("sprite",
+                                   location,
+                                   texture,
+                                   SpriteCreators.spriteSourceRectangles["cannon_0001_Layer-3"],
+                                   velocity,
+                                   BodyType.Static,
+                                   true);
+
+
+
+            sprite.Rotation = rotation; //will change
+
+            return sprite;
+        }
+        public static Sprite CreateCannonWheel(Vector2 location,
+                                                    Texture2D texture,
+                                                    Vector2 velocity,
+                                                    float rotation)
+        {
+            Sprite sprite = new Sprite("sprite",
+                                   location,
+                                   texture,
+                                   SpriteCreators.spriteSourceRectangles["cannon_0000_Layer-7"],
+                                   velocity,
+                                   BodyType.Static,
+                                   true);
+
+
 
             sprite.Rotation = rotation;
 

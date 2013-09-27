@@ -107,6 +107,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cannon.cs" />
     <Compile Include="LidgrenWorkThread.cs" />
     <Compile Include="Networking.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

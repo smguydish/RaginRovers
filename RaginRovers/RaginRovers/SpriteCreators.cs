@@ -13,6 +13,7 @@ using System.IO;
 using Microsoft.Xna.Framework.Storage;
 using RaginRoversLibrary;
 using FarseerPhysics.Collision.Shapes;
+using FarseerPhysics.Factories;
 
 namespace RaginRovers
 {
@@ -167,7 +168,13 @@ namespace RaginRovers
                                    SpriteCreators.spriteSourceRectangles["rover00"],
                                    velocity,
                                    BodyType.Dynamic,
-                                   true);
+                                   false);
+
+            //FarseerPhysics.Common.Vertices verts = new FarseerPhysics.Common.Vertices();
+            
+            Fixture bodyfixture = FixtureFactory.AttachRectangle(ConvertUnits.ToSimUnits(sprite.BoundingBoxRect.Width), ConvertUnits.ToSimUnits(sprite.BoundingBoxRect.Height), 1, Vector2.Zero, sprite.PhysicsBody);
+            bodyfixture.Restitution = 1;
+            bodyfixture.Friction = 1;
 
             SpriteCreators.AddFrames(sprite, "rover", 12);
 

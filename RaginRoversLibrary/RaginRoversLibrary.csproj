@@ -93,6 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Camera.cs" />
+    <Compile Include="CannonManager.cs" />
     <Compile Include="ConvertUnits.cs" />
     <Compile Include="GameObjectFactory.cs" />
     <Compile Include="GameWorld.cs" />

@@ -11,11 +11,19 @@ namespace RaginRovers
         /// </summary>
         static void Main(string[] args)
         {
+            if (args.Length > 0)
+            {
+                if (args[0] == "server")
+                {
+                    return;
+                }
+            }
+
             //Create Thread
             LidgrenWorkThread workerObject = new LidgrenWorkThread();
             Thread workerThread = new Thread(workerObject.SyncComps);
             //Start Thread
-            //workerThread.Start();
+            workerThread.Start();
 
             #region use elsewhere
             //Loop until worker thread active

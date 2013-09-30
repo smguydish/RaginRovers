@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\SlowBen\Documents\GitHub\RaginRovers\RaginRovers\RaginRovers\bin\x86\Debug\Content\spritesheet.xnb</Output>
-      <Time>2013-09-24T20:11:25.4195712-04:00</Time>
+      <Output>C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRovers\RaginRovers\bin\x86\Debug\Content\spritesheet.xnb</Output>
+      <Time>2013-09-30T14:24:35.4018-04:00</Time>
     </Item>
     <Item>
       <Source>background.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\SlowBen\Documents\GitHub\RaginRovers\RaginRovers\RaginRovers\bin\x86\Debug\Content\background.xnb</Output>
-      <Time>2013-09-24T20:11:25.3735228-04:00</Time>
+      <Output>C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRovers\RaginRovers\bin\x86\Debug\Content\background.xnb</Output>
+      <Time>2013-09-30T14:24:35.2938-04:00</Time>
     </Item>
     <Item>
       <Source>boom.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\SlowBen\Documents\GitHub\RaginRovers\RaginRovers\RaginRovers\bin\x86\Debug\Content\boom.xnb</Output>
-      <Time>2013-09-24T20:11:25.3815257-04:00</Time>
+      <Output>C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRovers\RaginRovers\bin\x86\Debug\Content\boom.xnb</Output>
+      <Time>2013-09-30T14:24:35.3388-04:00</Time>
     </Item>
     <Item>
       <Source>cursor.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\SlowBen\Documents\GitHub\RaginRovers\RaginRovers\RaginRovers\bin\x86\Debug\Content\cursor.xnb</Output>
-      <Time>2013-09-24T20:11:25.3825265-04:00</Time>
+      <Output>C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRovers\RaginRovers\bin\x86\Debug\Content\cursor.xnb</Output>
+      <Time>2013-09-30T14:24:35.3578-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -43,10 +43,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\SlowBen\Documents\GitHub\RaginRovers\RaginRovers\RaginRoversContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\SlowBen\Documents\GitHub\RaginRovers\RaginRovers\RaginRovers\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\SlowBen\Documents\GitHub\RaginRovers\RaginRovers\RaginRoversContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\SlowBen\Documents\GitHub\RaginRovers\RaginRovers\RaginRovers\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRovers\RaginRoversContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRovers\RaginRovers\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRovers\RaginRoversContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\eahscs\Documents\GitHub\RaginRovers\RaginRovers\RaginRovers\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -75,7 +75,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2012-11-02T11:18:45.6175437-04:00</Value>
+        <Value>2012-04-18T11:24:14.1308-04:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

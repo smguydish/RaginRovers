@@ -351,8 +351,16 @@ namespace RaginRovers
 
                             if (EditMode)
                             {
-                                factory.Create((int)GameObjectTypes.CANNON, new Vector2((int)ms.X + camera.Position.X - 95, (int)ms.Y - 80), "spritesheet", new Vector2(0, 0), 0);
-                                factory.Create((int)GameObjectTypes.CANNONWHEEL, new Vector2((int)ms.X + camera.Position.X - 95, (int)ms.Y - 80), "spritesheet", new Vector2(0, 0), 0);
+                                int icannon = factory.Create((int)GameObjectTypes.CANNON, new Vector2((int)ms.X + camera.Position.X - 95, (int)ms.Y - 80), "spritesheet", new Vector2(0, 0), 0);
+                                int iwheel = factory.Create((int)GameObjectTypes.CANNONWHEEL, new Vector2((int)ms.X + camera.Position.X - 30, (int)ms.Y - 120), "spritesheet", new Vector2(0, 0), 0);
+
+                                Sprite cannon = factory.Objects[icannon].sprite;
+                                Sprite wheel = factory.Objects[iwheel].sprite;
+
+                                cannon.Origin = new Vector2(120,103);
+                                
+                                wheel.Location = cannon.Location + cannon.Origin - wheel.Origin;
+
                                 canStartRotation = true;
                             }
 

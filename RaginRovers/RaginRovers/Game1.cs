@@ -42,7 +42,7 @@ namespace RaginRovers
         SpriteBatch spriteBatch;
         Camera camera;
 
-        //CannonManager cannonManager;
+        CannonManager cannonManager;
 
         GameObjectFactory factory;
         TextureManager textureManager;
@@ -85,7 +85,7 @@ namespace RaginRovers
             factory = GameObjectFactory.Instance;
             factory.Initialize(textureManager);
 
-            //cannonManager = new CannonManager();
+            cannonManager = new CannonManager();
 
             // Add a few sprite creators
             factory.AddCreator((int)GameObjectTypes.CAT, SpriteCreators.CreateCat);
@@ -249,12 +249,8 @@ namespace RaginRovers
                             break;
 ////////////////////////////////////////////////////
                         case Keys.Space:
-                            if (cannonState == CannonState.POWER)
-                                {
-                                cannonState = CannonState.SHOOT;
-                                }
-                            if (cannonState == CannonState.ROTATE)
-                                cannonState = CannonState.POWER;
+                            if (!EditMode)
+                                cannonManager.ChangeCannonState();
                             break;
 
                         case Keys.OemTilde:
@@ -431,35 +427,9 @@ namespace RaginRovers
             }
 
             #region CannonRotation
-            if (!EditMode)
+            if (!EditMode && canStartRotation) //can get rid of canStartRotation when we stop using edit mode
             {
-                if (cannonState == CannonState.ROTATE && canStartRotation)
-                {
-                    foreach (int key in factory.Objects.Keys)
-                    {
-                        if (factory.Objects[key].typeid == (int)GameObjectTypes.CANNON)
-                        {
-                            //decide whether to rotate one way or back
-                            if (factory.Objects[key].sprite.Rotation >= 0)
-                                rotationDirection = -1;
-                            if (factory.Objects[key].sprite.Rotation <=  -(MathHelper.PiOver2))
-                                rotationDirection = 1;
-
-
-
-                            factory.Objects[key].sprite.Rotation += ((MathHelper.PiOver4 / 16) * rotationDirection);
-                        }
-                    }
-
-                }
-                if (cannonState == CannonState.POWER)
-                {
-                    //power go between two values incrementally
-                    //visually show somehow
-                }
-                //Can put delay or whatever instead of these lines to reset cannonstate
-                if (cannonState == CannonState.SHOOT)
-                    cannonState = CannonState.ROTATE;
+                factory = cannonManager.ManipulateCannons(factory);
             }
             #endregion
 

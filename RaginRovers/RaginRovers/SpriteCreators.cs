@@ -273,7 +273,7 @@ namespace RaginRovers
                                    BodyType.Static,
                                    true);
 
-
+                sprite.PhysicsBody.CollidesWith = Category.None;
 
             sprite.Rotation = rotation; //will change
 
@@ -292,7 +292,7 @@ namespace RaginRovers
                                    BodyType.Static,
                                    true);
 
-
+                sprite.PhysicsBody.CollidesWith = Category.None;
 
             sprite.Rotation = rotation;
 

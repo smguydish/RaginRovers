@@ -31,6 +31,8 @@ namespace RaginRovers
         PLATFORM_RIGHT,
         CANNON,
         CANNONWHEEL,
+        POWERMETERBAR,
+        POWERMETERTAB,
         BOOM = 300
     }
 
@@ -265,7 +267,7 @@ namespace RaginRovers
                                                     Vector2 velocity,
                                                     float rotation)
         {
-            Sprite sprite = new Sprite("sprite",
+           Sprite sprite = new Sprite("sprite",
                                    location,
                                    texture,
                                    SpriteCreators.spriteSourceRectangles["cannon_0001_Layer-3"],
@@ -273,7 +275,8 @@ namespace RaginRovers
                                    BodyType.Static,
                                    true);
 
-                sprite.PhysicsBody.CollidesWith = Category.None;
+
+            sprite.PhysicsBody.CollidesWith = Category.None;
 
             sprite.Rotation = rotation; //will change
 
@@ -293,6 +296,44 @@ namespace RaginRovers
                                    true);
 
                 sprite.PhysicsBody.CollidesWith = Category.None;
+
+            sprite.Rotation = rotation;
+
+            return sprite;
+        }
+        public static Sprite CreatePowerMeterBar(Vector2 location,
+                                                     Texture2D texture,
+                                                     Vector2 velocity,
+                                                     float rotation)
+        {
+            Sprite sprite = new Sprite("sprite",
+                                   location,
+                                   texture,
+                                   new Rectangle(0,0,320,50),
+                                   velocity,
+                                   BodyType.Static,
+                                   true);
+
+            sprite.PhysicsBody.CollidesWith = Category.None;
+
+            sprite.Rotation = rotation;
+
+            return sprite;
+        }
+        public static Sprite CreatePowerMeterTab(Vector2 location,
+                                                     Texture2D texture,
+                                                     Vector2 velocity,
+                                                     float rotation)
+        {
+            Sprite sprite = new Sprite("sprite",
+                                   location,
+                                   texture,
+                                   new Rectangle(0, 0, 32, 100),
+                                   velocity,
+                                   BodyType.Static,
+                                   true);
+
+            sprite.PhysicsBody.CollidesWith = Category.None;
 
             sprite.Rotation = rotation;
 

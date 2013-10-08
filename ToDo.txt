@@ -1,0 +1,3 @@
+-get sprites to draw in order so that cannon is on top of shot dog
+-better hit boxes
+-get boom to look better (placement)

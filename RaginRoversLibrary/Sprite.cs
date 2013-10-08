@@ -36,6 +36,14 @@ namespace RaginRoversLibrary
         public bool ReSpawn = true;
         public int HitPoints = 100;
 
+        //cannonspecifics
+
+        public int rotationDirection = 1;
+        public float UpperRotationBounds = 0;
+        public float LowerRotationBounds = 0;
+
+        //
+
         public object tag;
 
         public Sprite target = null;
@@ -108,6 +116,7 @@ namespace RaginRoversLibrary
             this.Velocity = ConvertUnits.ToSimUnits(velocity);
         }
 
+        
         public void Destroy()
         {
             if (GameWorld.world.BodyList.Contains(body))

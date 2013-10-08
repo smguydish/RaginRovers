@@ -23,7 +23,7 @@ namespace RaginRovers
             LidgrenWorkThread workerObject = new LidgrenWorkThread();
             Thread workerThread = new Thread(workerObject.SyncComps);
             //Start Thread
-            workerThread.Start();
+            //workerThread.Start();
 
             #region use elsewhere
             //Loop until worker thread active

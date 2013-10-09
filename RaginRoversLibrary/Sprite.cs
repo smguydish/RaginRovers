@@ -41,6 +41,7 @@ namespace RaginRoversLibrary
         public int rotationDirection = 1;
         public float UpperRotationBounds = 0;
         public float LowerRotationBounds = 0;
+        public int groupNumber = 0;
 
         //
 

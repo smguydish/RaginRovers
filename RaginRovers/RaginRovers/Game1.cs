@@ -35,6 +35,8 @@ namespace RaginRovers
         public CannonState cannonState = CannonState.ROTATE;
         bool canStartRotation = false;
         int rotationDirection = 1;
+
+        int groupNumber = 1;
          
 
         // test
@@ -350,7 +352,7 @@ namespace RaginRovers
 
                             if (EditMode)
                             {
-                                factory = cannonManager.CreateCannonStuff(factory, ms, camera, false);
+                                factory = cannonManager.CreateCannonStuff(factory, ms, camera, false, ref groupNumber);
                                 
                                 canStartRotation = true;
                             }
@@ -361,7 +363,7 @@ namespace RaginRovers
 
                             if (EditMode)
                             {
-                                factory = cannonManager.CreateCannonStuff(factory, ms, camera, true);
+                                factory = cannonManager.CreateCannonStuff(factory, ms, camera, true, ref groupNumber);
 
                                 canStartRotation = true;
                             }
@@ -443,7 +445,7 @@ namespace RaginRovers
             #region CannonRotation
             if (!EditMode && canStartRotation) //can get rid of canStartRotation when we stop using edit mode
             {
-                factory = cannonManager.ManipulateCannons(factory);
+                factory = cannonManager.ManipulateCannons(factory, ref groupNumber);
             }
             #endregion
 

@@ -34,6 +34,7 @@ namespace RaginRoversLibrary
 
         public int Direction = 1;
 
+
         public CannonManager()
         { 
         }
@@ -48,7 +49,7 @@ namespace RaginRoversLibrary
                 cannonState = CannonState.POWER;
         }
 
-        public GameObjectFactory ManipulateCannons(GameObjectFactory factory)
+        public GameObjectFactory ManipulateCannons(GameObjectFactory factory, ref int groupNumber)
         {
             if (cannonState == CannonState.ROTATE)
             {
@@ -71,38 +72,47 @@ namespace RaginRoversLibrary
             }
             if (cannonState == CannonState.POWER)
             {
-                //power go between two values incrementally
-                //have to link the cannon objects together with integer or something so we can use them as a unit
-                
-                foreach (int key in factory.Objects.Keys)
+
+                //go through all objects to find the tab and cannon in same group
+                for (int i = 1; i < groupNumber; i++)
                 {
-                    if (factory.Objects[key].typeid == (int)RaginRovers.GameObjectTypes.POWERMETERTAB)
+                    foreach (int key in factory.Objects.Keys)
                     {
-                        if(factory.Objects[key].sprite.Location.X < 0)
+                        if (factory.Objects[key].typeid == (int)RaginRovers.GameObjectTypes.POWERMETERBAR)
                         {
-                            Direction = 1;
+                            foreach (int key2 in factory.Objects.Keys)
+                            {
+                                if (factory.Objects[key2].typeid == (int)RaginRovers.GameObjectTypes.POWERMETERTAB)
+                                {
+                                    if (factory.Objects[key].sprite.groupNumber == i && factory.Objects[key2].sprite.groupNumber == i)
+                                    {
+                                        //determine direction
+                                        if (factory.Objects[key].sprite.Location.X > factory.Objects[key2].sprite.Location.X)
+                                        {
+                                            Direction = 1;
+                                        }
+                                        else if (factory.Objects[key].sprite.Location.X + factory.Objects[key].sprite.BoundingBoxRect.Width - factory.Objects[key2].sprite.BoundingBoxRect.Width < factory.Objects[key2].sprite.Location.X)
+                                        {
+                                            Direction = -1;
+                                        }
+                                        factory.Objects[key2].sprite.Location += new Vector2(10 * Direction, 0);
+                                    }
+                                }
+                            }
                         }
-                        else if(factory.Objects[key].sprite.Location.X > 500)
-                        {
-                            Direction = -1;
-                        }
-                        factory.Objects[key].sprite.Location += new Vector2(10 * Direction, 0);
                     }
                 }
-
-                //visually show somehow
             }
             if (cannonState == CannonState.SHOOT)
             {
-                ShootDoggy(factory);
-                
+                ShootDoggy(factory, groupNumber);
                 cannonState = CannonState.ROTATE;
             }
 
             return factory;
         }
 
-        public GameObjectFactory ShootDoggy(GameObjectFactory factory)
+        public GameObjectFactory ShootDoggy(GameObjectFactory factory, int groupNumber)
         {
             List<int> temp = new List<int>();
             //figure out which cannon to shoot from
@@ -128,9 +138,32 @@ namespace RaginRoversLibrary
                     0,
                     0);
 
+
                 factory.Objects[dog].sprite.PhysicsBody.LinearVelocity = new Vector2(
-                        20 * (float)Math.Cos((double)factory.Objects[temp[i]].sprite.Rotation),
-                        20 * (float)Math.Sin((double)factory.Objects[temp[i]].sprite.Rotation));
+                        10 *  (float)Math.Cos((double)factory.Objects[temp[i]].sprite.Rotation),
+                        10 * (float)Math.Sin((double)factory.Objects[temp[i]].sprite.Rotation));
+
+                //chaning magnitude depending on power bar
+                for (int j = 1; j < groupNumber; j++)
+                {
+                    foreach (int key in factory.Objects.Keys)
+                    {
+                        if (factory.Objects[key].typeid == (int)RaginRovers.GameObjectTypes.POWERMETERBAR)
+                        {
+                            foreach (int key2 in factory.Objects.Keys)
+                            {
+                                if (factory.Objects[key2].typeid == (int)RaginRovers.GameObjectTypes.POWERMETERTAB)
+                                {
+                                    if (factory.Objects[key].sprite.groupNumber == j && factory.Objects[key2].sprite.groupNumber == j)
+                                    {
+                                        factory.Objects[dog].sprite.PhysicsBody.LinearVelocity *= ((factory.Objects[key2].sprite.Location.X - factory.Objects[key].sprite.Location.X) / factory.Objects[key].sprite.BoundingBoxRect.Width) + 1; 
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
 
                 factory.Objects[dog].sprite.PhysicsBody.Mass = 30;
                 factory.Objects[dog].sprite.PhysicsBody.Restitution = 0.4f;
@@ -147,13 +180,14 @@ namespace RaginRoversLibrary
                 //changing location so that origins equal
                 factory.Objects[boom].sprite.Location += factory.Objects[temp[i]].sprite.Origin - factory.Objects[boom].sprite.Origin;
 
-                factory.Objects[boom].sprite.Scale = 1.5f;
-            }
+                factory.Objects[boom].sprite.Scale = 0.5f;
 
+                
+            }
             return factory;
         }
 
-        public GameObjectFactory CreateCannonStuff(GameObjectFactory factory, MouseState ms, Camera camera, bool isReversed)
+        public GameObjectFactory CreateCannonStuff(GameObjectFactory factory, MouseState ms, Camera camera, bool isReversed, ref int groupNumber)
         {
             int icannon;
             if (!isReversed)
@@ -202,6 +236,12 @@ namespace RaginRoversLibrary
             //had to put after because cant access origin before sprite is created
             factory.Objects[itab].sprite.Location -= new Vector2(0, factory.Objects[itab].sprite.Origin.Y);
 
+            //putting them all in a group
+            factory.Objects[icannon].sprite.groupNumber = groupNumber;
+            factory.Objects[iwheel].sprite.groupNumber = groupNumber;
+            factory.Objects[ibar].sprite.groupNumber = groupNumber;
+            factory.Objects[itab].sprite.groupNumber = groupNumber;
+
             Sprite cannon = factory.Objects[icannon].sprite;
             Sprite wheel = factory.Objects[iwheel].sprite;
 
@@ -209,7 +249,7 @@ namespace RaginRoversLibrary
             cannon.Origin = new Vector2(120, 103);
 
             wheel.Location = cannon.Location + cannon.Origin - wheel.Origin;
-
+            groupNumber++;
             return factory;
         }
 
